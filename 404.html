@@ -8,7 +8,8 @@
         var path = window.location.pathname;
 
         // Redirect to index.html while preserving the path
-        window.location.replace(path.replace(new RegExp(".*\\.html$"), "index.html"));
+        var redirectPath = path.replace(new RegExp(".*\\.html$"), "index.html");
+        window.location.replace(redirectPath);
     </script>
 </head>
 <body>
