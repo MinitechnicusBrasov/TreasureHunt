@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Redirecting...</title>
+    <script>
+        // Get the current URL
+        var path = window.location.pathname;
+
+        // Redirect to index.html while preserving the path
+        window.location.replace(path.replace(new RegExp(".*\\.html$"), "index.html"));
+    </script>
+</head>
+<body>
+</body>
+</html>
